@@ -101,6 +101,7 @@ function VerifyEmail() {
               Resend it
             </button>
           </div>
+
         </div>
       )}
     </div>
