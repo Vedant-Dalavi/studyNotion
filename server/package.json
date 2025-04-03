@@ -189,6 +189,7 @@
     "semver": "^7.6.0",
     "send": "^0.18.0",
     "serve-static": "^1.15.0",
+    "server": "file:",
     "set-blocking": "^2.0.0",
     "set-function-length": "^1.2.2",
     "setprototypeof": "^1.2.0",

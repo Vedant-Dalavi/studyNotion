@@ -16,6 +16,7 @@ import ReviewSlider from '../components/common/ReviewSlider'
 const Home = () => {
   return (
     <div>
+      
       {/*Section1  */}
       <div className='relative mx-auto flex flex-col w-11/12 max-w-maxContent items-center 
       text-white justify-between'>
