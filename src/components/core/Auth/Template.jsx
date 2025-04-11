@@ -8,6 +8,8 @@ import SignupForm from "./SignupForm"
 function Template({ title, description1, description2, image, formType }) {
   const { loading } = useSelector((state) => state.auth)
 
+
+
   return (
     <div className="grid min-h-[calc(100vh-3.5rem)] place-items-center">
       {loading ? (
@@ -24,6 +26,25 @@ function Template({ title, description1, description2, image, formType }) {
                 {description2}
               </span>
             </p>
+            {
+              formType !== "signup" && <div className="my-2">
+                <p className=" text-blue-100" >Credentials:</p>
+                <div className="flex items-center gap-x-[170px] text-white">
+                  <p>Student</p>
+                  <p>Instructor</p>
+                </div>
+
+                <div className="flex items-center gap-x-24 text-richblack-100">
+                  <p>student@test.com</p>
+                  <p>instructor@test.com</p>
+                </div>
+
+                <div className="flex items-center gap-x-[180px] text-richblack-100">
+                  <p>12345</p>
+                  <p>12345</p>
+                </div>
+              </div>
+            }
             {formType === "signup" ? <SignupForm /> : <LoginForm />}
           </div>
           <div className="relative mx-auto w-11/12 max-w-[450px] md:mx-0">

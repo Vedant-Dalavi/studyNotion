@@ -46,9 +46,10 @@ exports.capturePayment = async(req, res) => {
         currency,
         receipt: Math.random(Date.now()).toString(),
     }
-
+    console.log("Payment on the way")
     try{
         const paymentResponse = await instance.orders.create(options);
+        console.log("payment received", paymentResponse)
         res.json({
             success:true,
             message:paymentResponse,
